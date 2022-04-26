@@ -43,7 +43,7 @@ namespace AndyRenderingPipeline
         protected override void Render(ScriptableRenderContext context, Camera[] cameras)
         {
 
-            GraphicsSettings.useScriptableRenderPipelineBatching = _asset.UseSRPBatch;
+            GraphicsSettings.useScriptableRenderPipelineBatching = Asset.UseSRPBatch;
             GraphicsSettings.lightsUseLinearIntensity = (QualitySettings.activeColorSpace == ColorSpace.Linear);
             this._context = context;
 
